@@ -203,13 +203,25 @@ public class Main {
                 1237,
                 1510,
                 1093};
-
+        //Day 1 nr:1
         for (int i = 0; i < number.length; i++) {
             for (int v = 0; v < number.length; v++) {
                 int sum = number[i] + number[v];
                 if (sum == 2020){
                     System.out.println(number[i] + " plus " + number[v] + " = " + sum);
                     System.out.println(number[i] * number[v]);
+                }
+            }
+        }
+        //Day 1 nr:2
+        for (int a = 0; a < number.length; a++) {
+            for (int b = 0; b < number.length; b++) {
+                for (int c = 0; c < number.length; c++) {
+                    int sum = number[a] + number[b] + number[c];
+                    if (sum == 2020) {
+                        System.out.println(number[a] + " + " + number[b] + " + " + number[c] + " = " + sum);
+                        System.out.println(number[a] * number[b] * number[c]);
+                    }
                 }
             }
         }
